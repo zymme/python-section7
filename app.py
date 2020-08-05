@@ -21,7 +21,6 @@ api = Api(app)
 def create_tables():
     db.create_all()
 
-
 jwt = JWT(app, authenticate, identity)  # /auth
 
 db.init_app(app)
